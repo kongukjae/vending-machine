@@ -10,3 +10,16 @@
  * todo : input 태그 입력값이 있는 상태 식별
  * 
  */
+
+ const test = require('./itemMakerObject.js');
+
+ const work = test(1, "test", 1000, false);
+ console.log(work);
+
+ let count = 17;
+ let testWork = [];
+ for(let i = 0; i < count; i++) {
+  testWork[i] = test(i+1, `test-${i}`, 1000, false);
+ }
+
+ console.log(testWork);
