@@ -11,7 +11,7 @@
  * ? 1. order : 배열의 크기만큼
  * ? 2. emoji : 랜덤으로 결정
  * ? 3. price : 랜덤으로 결정
- * ? 4. isClick : 기본값 False
+ * ? 4. isClick : 기본값 false
  * 
  */
 
@@ -24,3 +24,4 @@ function vendingMachineItemMakerObject(order, emoji, price, clickState) {
   }
 }
 
+module.exports = vendingMachineItemMakerObject;
