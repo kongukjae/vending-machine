@@ -1,16 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    * {margin:0; padding:0; box-sizing: border-box;}
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      ul {
+        list-style-type: none;
+      }
 
-  </style>
-</head>
-<body>
-  
-</body>
+      /* #root > div :nth-child(1) {
+      border : 1px solid red;
+    } */
+
+      #vending-item-container {
+        border: 1px solid blue;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 50vw;
+      }
+
+      #vending-item-container > li > div {
+        border: 1px solid red;
+        border-radius: 10px;
+        aspect-ratio: 1 / 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+
+      #vending-item-container li > div > div:nth-child(1) {
+        background-color: #ccc;
+      }
+
+      #vending-item-container li > div > div:nth-child(2) {
+        background-color: #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+      }
+      #vending-item-container li > div > div:nth-child(2) > h1:nth-child(1) {
+        background-color: aquamarine;
+      }
+      #vending-item-container li > div > div:nth-child(2) > h2:nth-child(2) {
+        background-color: darkcyan;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div>
+        <ul id="vending-item-container">
+          <li>
+            <div>
+              <div>이모지</div>
+              <div>
+                <h1>1</h1>
+                <h2>1000원</h2>
+              </div>
+            </div>
+          </li>
+          
+          <li>
+            <div>
+              <div>이모지</div>
+              <div>
+                <h1>1</h1>
+                <h2>1000원</h2>
+              </div>
+            </div>
+          </li>
+      
+        </ul>
+      </div>
+      <div></div>
+    </div>
+  </body>
 </html>
